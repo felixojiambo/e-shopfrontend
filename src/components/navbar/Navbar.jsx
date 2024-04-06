@@ -9,7 +9,7 @@ const [menu,setMenu]=useState("shop");
 
 
   return (
-    <><div className='navbar'>
+    <div className='navbar'>
       <div className='nav-logo'>
         <img src={logo} alt="" />
         <p>E-SHOP</p>
@@ -23,7 +23,7 @@ const [menu,setMenu]=useState("shop");
         <button>Login</button>
         <img src={cart_icon} alt='' />
         <div className="nav-cart-count">0</div>
-      </div></>
+      </div>
     </div>
   )
 }
