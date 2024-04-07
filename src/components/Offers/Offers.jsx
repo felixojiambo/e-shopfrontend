@@ -6,8 +6,8 @@ const Offers = () => {
     <div className='offers'>
 <div className="offers-left">
 <h1>Exclusive</h1>
-<h1>Offers For Your</h1>
-<p>ONLY ON NAIROBI BEST SELLERS PRODUCTS</p>
+<h1>From</h1>
+<p>NAIROBI BEST SELLERS</p>
 <button>Check Now</button>
 </div>
 <div className="offers-right">
