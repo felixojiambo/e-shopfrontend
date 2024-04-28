@@ -1,10 +1,12 @@
 import React from 'react'
 import './css/LoginSignUp.css'
 const LoginSignUp = () => {
+
+  const [state,setState]=useState("Login")
   return (
     <div className="loginsignup">
 
-      <div className="loginsignup-container"> <h1>Sign Up </h1>
+      <div className="loginsignup-container"> <h1>{state} </h1>
       
       <div className="loginsignup-fields">
         <input type="tetx" placeholder="Your name" />
