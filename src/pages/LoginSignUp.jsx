@@ -3,6 +3,12 @@ import "./css/LoginSignUp.css";
 import { useState } from "react";
 const LoginSignUp = () => {
   const [state, setState] = useState("Login");
+  const login =async()=>{
+console.log("login function executed")
+  }
+  const signup =async()=>{
+    console.log("Signup running")
+  }
   return (
     <div className="loginsignup">
       <div className="loginsignup-container">
@@ -17,7 +23,7 @@ const LoginSignUp = () => {
           <input type="email" placeholder="Email Address" />
           <input type="password" placeholder="Password" />
         </div>
-        <button>Continue</button>
+        <button onClick={()=>{state==="Login"?login():signup()}}>Continue</button>
         {state === "Sign Up" ? 
           <p className="loginsignup-login">
             Already have an account? <span onClick={()=>{setState("Login")}}>Login here</span>
